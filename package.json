@@ -1,0 +1,36 @@
+{
+  "name": "@jsuhub/jsu-feishu-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "format": "prettier --write",
+    "lint": "eslint ",
+    "add": "changeset add",
+    "version": "changeset version",
+    "prerelease": "changeset pre enter alpha",
+    "exit": "changeset pre exit",
+    "publish": "changeset publish",
+    "commit": "git add -A && cz"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "@commitlint/config-conventional": "^17.4.4",
+    "commitizen": "^4.3.0",
+    "commitlint": "^17.5.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.37.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
